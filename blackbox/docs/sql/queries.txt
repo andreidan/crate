@@ -157,6 +157,7 @@ all simple data types:
     like              matches a part of the given value
     ~                 regular expression match
     !~                negated regular expression match
+    between           shortcut for `a >= x AND a <= y`
     ================  =================================
 
 For strings a lexicographical comparison is performed based on the
@@ -1117,6 +1118,7 @@ The having clause supports the same operators as the :ref:`sql_dql_where_clause`
     like              matches a part of the given value
     ~                 regular expression match
     !~                negated regular expression match
+    between           shortcut for `a >= x AND a <= y`
     ================  =================================
 
 Predicates
