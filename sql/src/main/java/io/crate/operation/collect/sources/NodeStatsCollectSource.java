@@ -102,9 +102,9 @@ public class NodeStatsCollectSource implements CollectSource {
         EvaluatingNormalizer normalizer = new EvaluatingNormalizer(
             functions,
             RowGranularity.DOC,
+            ReplaceMode.COPY,
             localSysColReferenceResolver,
-            null,
-            ReplaceMode.COPY
+            null
         );
         List<DiscoveryNode> newNodes = new ArrayList<>();
         for (DiscoveryNode node : nodes) {
